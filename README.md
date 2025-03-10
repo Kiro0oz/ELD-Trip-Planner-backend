@@ -66,7 +66,8 @@ This project uses **JWT authentication** via **Django SimpleJWT**.
 ---
 
 ### ERD:
-![ERD](https://github.com/user-attachments/assets/4a6be24c-8b29-46a1-b0c2-05b6a352d575)
+![ERD](https://github.com/user-attachments/assets/b3723251-7cb1-4275-a90a-35c10d9e4b37)
+
 
 
 ---
