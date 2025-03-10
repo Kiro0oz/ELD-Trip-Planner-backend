@@ -6,8 +6,10 @@ class TripSerializer(serializers.ModelSerializer):
     end_location = serializers.CharField(max_length=255, required=True)
     start_date = serializers.DateTimeField(required=True)
     end_date = serializers.DateTimeField(required=False)
-    distance = serializers.FloatField(required=True)
-    duration = serializers.IntegerField(required=True)
+    totalDistance = serializers.FloatField(required=True)
+    totalDuration = serializers.FloatField(required=True)
+    requiredBreaks = serializers.IntegerField(required=True)
+    requiredRests = serializers.IntegerField(required=True)
 
     class Meta:
         model = Trip

@@ -7,8 +7,10 @@ class Trip(models.Model):
     end_location = models.CharField(max_length=255)
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
-    distance = models.FloatField()
-    duration = models.IntegerField()
+    totalDistance = models.FloatField(default=0.0)  
+    totalDuration = models.FloatField(default=0.0)  
+    requiredBreaks = models.IntegerField(default=0)  
+    requiredRests = models.IntegerField(default=0)  
     created_at = models.DateTimeField(auto_now_add=True)
     report_url = models.CharField(max_length=500, blank=True, null=True)
 

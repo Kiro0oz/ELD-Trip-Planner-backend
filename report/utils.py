@@ -14,17 +14,23 @@ def generate_trip_report(trip):
 
     # Create PDF
     c = canvas.Canvas(pdf_path, pagesize=A4)
-    c.setFont("Helvetica-Bold", 16)
-    c.drawString(100, 800, f"Trip Report")
+
+    # Title
+    c.setFont("Helvetica-Bold", 18)
+    c.drawString(200, 800, "Trip Report")
 
     c.setFont("Helvetica", 12)
+    
+    # Trip Details
     c.drawString(100, 770, f"Driver: {trip.user.username}")
     c.drawString(100, 750, f"Start Location: {trip.start_location}")
     c.drawString(100, 730, f"End Location: {trip.end_location}")
     c.drawString(100, 710, f"Start Date: {trip.start_date.strftime('%Y-%m-%d %H:%M:%S')}")
     c.drawString(100, 690, f"End Date: {trip.end_date.strftime('%Y-%m-%d %H:%M:%S')}")
-    c.drawString(100, 670, f"Distance: {trip.distance} km")
-    c.drawString(100, 650, f"Duration: {trip.duration} minutes")
+    c.drawString(100, 670, f"Total Distance: {trip.totalDistance} Mils")
+    c.drawString(100, 650, f"Total Duration: {trip.totalDuration} hours")
+    c.drawString(100, 630, f"Required Breaks: {trip.requiredBreaks}")
+    c.drawString(100, 610, f"Required Rests: {trip.requiredRests}")
 
     c.save()
 
