@@ -25,8 +25,7 @@ This is the backend service for the **ELD Trip Planner Application** built with 
 
 ### 1️⃣ Clone the repository:
 ```bash
- git clone https://github.com/yourusername/eld-trip-planner-backend.git
- cd eld-trip-planner-backend
+ git clone https://github.com/Kiro0oz/ELD-Trip-Planner-backend.git
 ```
 
 ### 2️⃣ Create and activate a virtual environment:
@@ -45,11 +44,6 @@ pip install -r requirements.txt
 ```bash
 python manage.py makemigrations
 python manage.py migrate
-```
-
-### 5️⃣ Create a superuser:
-```bash
-python manage.py createsuperuser
 ```
 
 ### 6️⃣ Run the development server:
