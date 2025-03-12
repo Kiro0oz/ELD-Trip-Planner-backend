@@ -16,7 +16,7 @@ This is the backend service for the **ELD Trip Planner Application** built with 
 - **Python 3**
 - **Django 4**
 - **Django Rest Framework (DRF)**
-- **PostgreSQL / SQLite** (Choose based on your environment)
+- **SQLite** 
 - **ReportLab** (For generating PDF reports)
 
 ---
